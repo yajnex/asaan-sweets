@@ -12,10 +12,10 @@ const buttonVariants = cva(
         default:
           "bg-[linear-gradient(135deg,#342016,#24140d)] text-cream shadow-[0_18px_40px_rgba(44,27,18,0.16)] hover:-translate-y-1 hover:shadow-[0_26px_54px_rgba(44,27,18,0.22)] active:scale-[0.99]",
         outline:
-          "border border-brown/12 bg-white/72 text-brown shadow-[0_12px_28px_rgba(44,27,18,0.05)] hover:-translate-y-1 hover:border-gold/30 hover:bg-white hover:shadow-[0_20px_44px_rgba(44,27,18,0.1)] active:scale-[0.99]",
+          "border border-brown/16 bg-white/78 text-brown shadow-[0_12px_28px_rgba(44,27,18,0.08)] hover:-translate-y-1 hover:border-gold/40 hover:bg-white hover:shadow-[0_20px_44px_rgba(44,27,18,0.12)] active:scale-[0.99]",
         ghost:
           "text-brown hover:-translate-y-0.5 hover:bg-brown/5 active:scale-[0.99]",
-        gold: "bg-[linear-gradient(135deg,#f4e19b,#d4af37_48%,#b98319)] text-brown shadow-[0_20px_44px_rgba(212,175,55,0.28)] hover:-translate-y-1 hover:shadow-[0_28px_58px_rgba(212,175,55,0.36)] active:scale-[0.99]",
+        gold: "border border-[#b8891d] bg-[linear-gradient(135deg,#efcf68,#d4af37_54%,#b98319)] text-[#2c1b12] shadow-md shadow-[0_18px_38px_rgba(164,116,17,0.28)] hover:-translate-y-1 hover:scale-[1.01] hover:shadow-[0_24px_52px_rgba(164,116,17,0.34)] active:scale-[0.99]",
         link: "h-auto rounded-none p-0 text-brown underline-offset-4 hover:underline",
       },
       size: {

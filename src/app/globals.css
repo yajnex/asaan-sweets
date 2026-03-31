@@ -44,10 +44,10 @@ html {
 body {
   min-height: 100vh;
   overflow-x: hidden;
-  background:
-    radial-gradient(circle at top left, rgba(212, 175, 55, 0.13), transparent 34%),
-    radial-gradient(circle at top right, rgba(44, 27, 18, 0.04), transparent 24%),
-    linear-gradient(180deg, #fbf7f0 0%, #f8f4ec 48%, #f5eee3 100%);
+  background-color: #f8f4ec;
+  background-image:
+    radial-gradient(circle at top left, rgba(212, 175, 55, 0.1), transparent 30%),
+    linear-gradient(180deg, #faf6ef 0%, #f8f4ec 52%, #f4ede2 100%);
   color: var(--foreground);
   font-family: var(--font-body), sans-serif;
   text-rendering: optimizeLegibility;
@@ -167,10 +167,6 @@ button:focus-visible,
 }
 
 @media (min-width: 768px) {
-  .container-shell {
-    padding-inline: 1.5rem;
-  }
-
   .section-space {
     padding-block: 5rem;
   }
@@ -181,5 +177,17 @@ button:focus-visible,
 
   .section-space-loose {
     padding-block: 5.75rem;
+  }
+}
+
+@media (min-width: 640px) {
+  .container-shell {
+    padding-inline: 1.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container-shell {
+    padding-inline: 2rem;
   }
 }

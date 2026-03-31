@@ -20,7 +20,7 @@ export function FloatingWhatsAppButton() {
         asChild
         variant="gold"
         size="lg"
-        className="h-12 rounded-full px-4 text-sm shadow-[0_28px_72px_rgba(212,175,55,0.28)] hover:shadow-[0_36px_88px_rgba(212,175,55,0.34)] focus-visible:ring-2 focus-visible:ring-[var(--ring)] sm:h-14 sm:pl-5 sm:pr-6"
+        className="h-12 rounded-full px-4 text-sm shadow-md shadow-[0_18px_38px_rgba(164,116,17,0.3)] hover:scale-[1.02] hover:shadow-[0_26px_56px_rgba(164,116,17,0.34)] focus-visible:ring-2 focus-visible:ring-[var(--ring)] sm:h-14 sm:pl-5 sm:pr-6"
       >
         <a href={getWhatsAppLink()} aria-label="Order on WhatsApp">
           <MessageCircle className="h-5 w-5" />
