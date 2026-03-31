@@ -1,0 +1,24 @@
+<svg width="1200" height="1400" viewBox="0 0 1200 1400" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="180" y1="120" x2="1030" y2="1320" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FBF6EE"/>
+      <stop offset="1" stop-color="#EADCC8"/>
+    </linearGradient>
+    <radialGradient id="gold" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(820 360) rotate(90) scale(260)">
+      <stop stop-color="#F4E2A4"/>
+      <stop offset="1" stop-color="#D4AF37"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="1400" rx="64" fill="url(#bg)"/>
+  <circle cx="840" cy="360" r="240" fill="url(#gold)" fill-opacity="0.22"/>
+  <circle cx="320" cy="980" r="300" fill="#2C1B12" fill-opacity="0.06"/>
+  <ellipse cx="600" cy="720" rx="340" ry="180" fill="#B98730" fill-opacity="0.18"/>
+  <ellipse cx="600" cy="694" rx="364" ry="198" fill="#D5AA48"/>
+  <ellipse cx="600" cy="684" rx="306" ry="162" fill="#FFFFFF" fill-opacity="0.72"/>
+  <g fill="#2C1B12" fill-opacity="0.42">
+    <path d="M416 978C452 922 506 892 580 892C654 892 710 922 746 978" stroke="#2C1B12" stroke-opacity="0.2" stroke-width="18" stroke-linecap="round"/>
+    <path d="M470 1016H730" stroke="#2C1B12" stroke-opacity="0.16" stroke-width="18" stroke-linecap="round"/>
+  </g>
+  <text x="600" y="520" text-anchor="middle" fill="#2C1B12" fill-opacity="0.7" font-family="Georgia, 'Times New Roman', serif" font-size="64">Asaan Sweets</text>
+  <text x="600" y="586" text-anchor="middle" fill="#6E5646" font-family="Arial, Helvetica, sans-serif" font-size="22" letter-spacing="5">IMAGE COMING SOON</text>
+</svg>

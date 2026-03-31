@@ -1,0 +1,46 @@
+<svg width="1200" height="1400" viewBox="0 0 1200 1400" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="140" y1="90" x2="1060" y2="1310" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F7EEE1"/>
+      <stop offset="1" stop-color="#E7D5BE"/>
+    </linearGradient>
+    <radialGradient id="tray" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(618 876) rotate(90) scale(224 336)">
+      <stop stop-color="#F9E59B"/>
+      <stop offset="0.6" stop-color="#D3A93F"/>
+      <stop offset="1" stop-color="#A56E1A"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="1400" fill="url(#bg)"/>
+  <rect y="996" width="1200" height="404" fill="#D4B897"/>
+  <path d="M0 1062C158 1037 273 1038 410 1056C561 1076 637 1127 793 1136C942 1145 1043 1103 1200 1059V1400H0V1062Z" fill="#C59F74"/>
+  <ellipse cx="610" cy="842" rx="360" ry="186" fill="#B78A36" fill-opacity="0.28"/>
+  <ellipse cx="610" cy="814" rx="382" ry="206" fill="url(#tray)"/>
+  <ellipse cx="610" cy="802" rx="326" ry="170" fill="#FCF8F1"/>
+  <g fill="#E0D1A5">
+    <rect x="420" y="720" width="72" height="72" rx="12" transform="rotate(45 420 720)"/>
+    <rect x="512" y="694" width="72" height="72" rx="12" transform="rotate(45 512 694)"/>
+    <rect x="604" y="720" width="72" height="72" rx="12" transform="rotate(45 604 720)"/>
+    <rect x="696" y="694" width="72" height="72" rx="12" transform="rotate(45 696 694)"/>
+  </g>
+  <g fill="#D87C1B">
+    <circle cx="454" cy="908" r="44"/>
+    <circle cx="548" cy="962" r="44"/>
+    <circle cx="644" cy="908" r="44"/>
+    <circle cx="740" cy="962" r="44"/>
+  </g>
+  <g fill="#C98A47">
+    <circle cx="794" cy="794" r="34"/>
+    <circle cx="864" cy="842" r="34"/>
+    <circle cx="936" cy="794" r="34"/>
+  </g>
+  <circle cx="230" cy="1124" r="104" fill="#A96A2E"/>
+  <circle cx="230" cy="1124" r="82" fill="#D3AF71"/>
+  <g fill="#7A4C27">
+    <circle cx="966" cy="1136" r="78"/>
+    <circle cx="1044" cy="1136" r="78"/>
+  </g>
+  <circle cx="998" cy="1136" r="32" fill="#D9C081"/>
+  <circle cx="1078" cy="1136" r="32" fill="#D9C081"/>
+  <path d="M116 1180C156 1094 230 1060 312 1096" stroke="#6F4529" stroke-width="24" stroke-linecap="round"/>
+  <path d="M894 520C966 442 1068 436 1136 500" stroke="#9B7335" stroke-width="18" stroke-linecap="round" stroke-opacity="0.8"/>
+</svg>

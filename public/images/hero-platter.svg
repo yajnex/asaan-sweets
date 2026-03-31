@@ -1,0 +1,68 @@
+<svg width="1600" height="1200" viewBox="0 0 1600 1200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="200" y1="80" x2="1400" y2="1120" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#6E4633"/>
+      <stop offset="0.48" stop-color="#3B2418"/>
+      <stop offset="1" stop-color="#24140D"/>
+    </linearGradient>
+    <radialGradient id="tray" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(815 760) rotate(90) scale(300 520)">
+      <stop stop-color="#F8E7A2"/>
+      <stop offset="0.52" stop-color="#D8B052"/>
+      <stop offset="1" stop-color="#A36A1A"/>
+    </radialGradient>
+    <filter id="shadow" x="110" y="280" width="1380" height="700" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="36" stdDeviation="36" flood-color="#120904" flood-opacity="0.36"/>
+    </filter>
+  </defs>
+  <rect width="1600" height="1200" fill="url(#bg)"/>
+  <circle cx="250" cy="180" r="220" fill="#D4AF37" fill-opacity="0.12"/>
+  <circle cx="1400" cy="180" r="280" fill="#F7E8C2" fill-opacity="0.08"/>
+  <path d="M0 1160C181 1033 327 978 464 986C636 996 706 1095 878 1106C1096 1120 1218 955 1600 874V1200H0V1160Z" fill="#F8F1E6" fill-opacity="0.08"/>
+  <g filter="url(#shadow)">
+    <ellipse cx="815" cy="754" rx="510" ry="238" fill="#2A180F" fill-opacity="0.4"/>
+    <ellipse cx="815" cy="712" rx="540" ry="256" fill="url(#tray)"/>
+    <ellipse cx="815" cy="700" rx="470" ry="210" fill="#F8F4EC"/>
+  </g>
+  <g fill="#EFE2B8">
+    <rect x="528" y="598" width="92" height="92" rx="14" transform="rotate(45 528 598)"/>
+    <rect x="640" y="570" width="92" height="92" rx="14" transform="rotate(45 640 570)"/>
+    <rect x="750" y="598" width="92" height="92" rx="14" transform="rotate(45 750 598)"/>
+    <rect x="862" y="570" width="92" height="92" rx="14" transform="rotate(45 862 570)"/>
+    <rect x="974" y="598" width="92" height="92" rx="14" transform="rotate(45 974 598)"/>
+  </g>
+  <g fill="#D57B1F">
+    <circle cx="560" cy="800" r="58"/>
+    <circle cx="660" cy="860" r="58"/>
+    <circle cx="760" cy="800" r="58"/>
+    <circle cx="860" cy="860" r="58"/>
+  </g>
+  <g fill="#D7A145">
+    <rect x="930" y="770" width="110" height="88" rx="16"/>
+    <rect x="1048" y="740" width="110" height="88" rx="16"/>
+    <rect x="1166" y="770" width="110" height="88" rx="16"/>
+  </g>
+  <g fill="#C98A47">
+    <circle cx="1050" cy="564" r="46"/>
+    <circle cx="1140" cy="626" r="46"/>
+    <circle cx="1230" cy="564" r="46"/>
+  </g>
+  <g fill="#7E4D2A">
+    <circle cx="1032" cy="936" r="52"/>
+    <circle cx="1138" cy="936" r="52"/>
+    <circle cx="1244" cy="936" r="52"/>
+  </g>
+  <g fill="#F4DB7E">
+    <ellipse cx="560" cy="800" rx="6" ry="18" transform="rotate(-20 560 800)"/>
+    <ellipse cx="760" cy="800" rx="6" ry="18" transform="rotate(10 760 800)"/>
+    <ellipse cx="860" cy="860" rx="6" ry="18" transform="rotate(-8 860 860)"/>
+    <ellipse cx="1060" cy="564" rx="5" ry="16" transform="rotate(-12 1060 564)"/>
+    <ellipse cx="1240" cy="564" rx="5" ry="16" transform="rotate(12 1240 564)"/>
+  </g>
+  <g fill="#89A35C">
+    <circle cx="1132" cy="936" r="7"/>
+    <circle cx="1240" cy="936" r="7"/>
+    <circle cx="532" cy="648" r="7"/>
+    <circle cx="750" cy="648" r="7"/>
+    <circle cx="972" cy="648" r="7"/>
+  </g>
+</svg>

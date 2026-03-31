@@ -1,0 +1,24 @@
+<svg width="800" height="960" viewBox="0 0 800 960" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="960" fill="#F4E7D7"/>
+  <circle cx="170" cy="154" r="124" fill="#D4AF37" fill-opacity="0.1"/>
+  <ellipse cx="398" cy="550" rx="256" ry="132" fill="#B98730" fill-opacity="0.22"/>
+  <ellipse cx="398" cy="522" rx="274" ry="150" fill="#D7AC49"/>
+  <ellipse cx="398" cy="510" rx="232" ry="122" fill="#FBF7EF"/>
+  <g fill="#C88A45">
+    <circle cx="282" cy="508" r="56"/>
+    <circle cx="398" cy="450" r="56"/>
+    <circle cx="514" cy="508" r="56"/>
+    <circle cx="340" cy="618" r="56"/>
+    <circle cx="456" cy="618" r="56"/>
+  </g>
+  <g fill="#F7D25F">
+    <ellipse cx="398" cy="438" rx="5" ry="18" transform="rotate(18 398 438)"/>
+    <ellipse cx="284" cy="496" rx="5" ry="18" transform="rotate(-20 284 496)"/>
+    <ellipse cx="514" cy="496" rx="5" ry="18" transform="rotate(20 514 496)"/>
+  </g>
+  <g fill="#89A35C">
+    <circle cx="334" cy="620" r="7"/>
+    <circle cx="450" cy="620" r="7"/>
+    <circle cx="398" cy="450" r="7"/>
+  </g>
+</svg>

@@ -1,0 +1,43 @@
+<svg width="1200" height="1400" viewBox="0 0 1200 1400" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="150" y1="70" x2="1040" y2="1320" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F8F1E7"/>
+      <stop offset="1" stop-color="#E5D2BA"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="1400" fill="url(#bg)"/>
+  <rect y="1040" width="1200" height="360" fill="#C9A27A"/>
+  <rect x="124" y="170" width="416" height="286" rx="40" fill="#B47C34"/>
+  <rect x="148" y="194" width="368" height="238" rx="30" fill="#F7F1E5"/>
+  <g fill="#C98D44">
+    <circle cx="238" cy="312" r="54"/>
+    <circle cx="368" cy="312" r="54"/>
+    <circle cx="488" cy="312" r="54"/>
+  </g>
+  <rect x="664" y="172" width="412" height="284" rx="40" fill="#B47C34"/>
+  <rect x="688" y="196" width="364" height="236" rx="30" fill="#F7F1E5"/>
+  <g fill="#8F5A33">
+    <circle cx="794" cy="314" r="48"/>
+    <circle cx="918" cy="314" r="48"/>
+  </g>
+  <circle cx="1018" cy="314" r="48" fill="#D6B976"/>
+  <rect x="162" y="590" width="878" height="232" rx="46" fill="#2F1C13"/>
+  <rect x="196" y="624" width="810" height="164" rx="32" fill="#6B3F24"/>
+  <path d="M250 706H958" stroke="#E6C07A" stroke-width="18" stroke-linecap="round"/>
+  <circle cx="316" cy="964" r="132" fill="#B27B36"/>
+  <circle cx="316" cy="964" r="100" fill="#F7EFE2"/>
+  <g fill="#E0D2A8">
+    <rect x="270" y="916" width="48" height="48" rx="8" transform="rotate(45 270 916)"/>
+    <rect x="332" y="884" width="48" height="48" rx="8" transform="rotate(45 332 884)"/>
+    <rect x="392" y="916" width="48" height="48" rx="8" transform="rotate(45 392 916)"/>
+  </g>
+  <circle cx="876" cy="1010" r="146" fill="#A96A2E"/>
+  <circle cx="876" cy="1010" r="112" fill="#D1B372"/>
+  <g fill="#89A35C">
+    <circle cx="818" cy="996" r="10"/>
+    <circle cx="882" cy="962" r="10"/>
+    <circle cx="944" cy="1014" r="10"/>
+    <circle cx="870" cy="1068" r="10"/>
+  </g>
+  <path d="M1018 822C1096 878 1118 974 1092 1058" stroke="#704728" stroke-width="22" stroke-linecap="round"/>
+</svg>
