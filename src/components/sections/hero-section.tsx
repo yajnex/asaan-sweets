@@ -23,26 +23,27 @@ export function HeroSection() {
           sizes="100vw"
           className="object-cover object-center"
         />
-        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(212,175,55,0.22),transparent_24%),linear-gradient(115deg,rgba(20,12,8,0.9),rgba(20,12,8,0.54),rgba(20,12,8,0.72))]" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(212,175,55,0.22),transparent_24%),linear-gradient(115deg,rgba(20,12,8,0.92),rgba(20,12,8,0.58),rgba(20,12,8,0.8))]" />
+        <div className="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-b from-transparent via-[#2c1b12]/34 to-[#f8f4ec]" />
       </div>
 
-      <div className="container-shell relative flex w-full justify-center pb-20 pt-40 md:pb-24 md:pt-44">
+      <div className="container-shell relative flex min-h-[100svh] w-full items-center justify-center pb-24 pt-28 md:pb-28 md:pt-32">
         <motion.div
           initial={{ opacity: 0, y: 32 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
-          className="flex max-w-[760px] flex-col items-center space-y-10 text-center"
+          className="flex max-w-[760px] flex-col items-center gap-8 text-center md:gap-10"
         >
           <BrandMark size="hero" centered />
 
-          <div className="space-y-6">
-            <p className="text-[10px] font-semibold uppercase tracking-[0.32em] text-cream/72">
+          <div className="space-y-4 md:space-y-6">
+            <p className="text-[10px] font-semibold uppercase tracking-[0.32em] text-cream/72 md:text-[11px]">
               Heritage Mithai Since 1987
             </p>
-            <h1 className="text-balance font-serif text-[52px] font-semibold leading-[0.92] md:text-[88px]">
+            <h1 className="text-balance font-serif text-[44px] font-semibold leading-[0.92] sm:text-[52px] md:text-[88px]">
               38 Years of Sweet Legacy
             </h1>
-            <p className="text-balance max-w-[620px] text-base leading-8 text-cream/82 md:text-[18px]">
+            <p className="text-balance max-w-[620px] text-[15px] leading-7 text-cream/82 md:text-[18px] md:leading-8">
               Handcrafted Indian sweets and savouries, prepared fresh daily and
               delivered with gift-ready care. Order in seconds on WhatsApp.
             </p>

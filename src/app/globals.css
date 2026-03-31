@@ -43,6 +43,7 @@ html {
 
 body {
   min-height: 100vh;
+  overflow-x: hidden;
   background:
     radial-gradient(circle at top left, rgba(212, 175, 55, 0.14), transparent 32%),
     radial-gradient(circle at top right, rgba(107, 69, 38, 0.05), transparent 28%),
@@ -73,6 +74,12 @@ a:focus-visible {
   border-radius: 12px;
 }
 
+button:focus-visible,
+[role="button"]:focus-visible {
+  outline: 2px solid var(--ring);
+  outline-offset: 4px;
+}
+
 .tap-highlight-none {
   -webkit-tap-highlight-color: transparent;
 }
@@ -86,6 +93,10 @@ a:focus-visible {
 
 .section-space {
   padding-block: 5rem;
+}
+
+.section-space-tight {
+  padding-block: 4rem;
 }
 
 .surface-panel {
@@ -148,5 +159,9 @@ a:focus-visible {
 
   .section-space {
     padding-block: 6.5rem;
+  }
+
+  .section-space-tight {
+    padding-block: 5rem;
   }
 }

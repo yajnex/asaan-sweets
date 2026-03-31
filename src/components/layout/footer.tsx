@@ -13,7 +13,7 @@ const socialIcons = {
 export function Footer() {
   return (
     <footer className="border-t border-brown/8 bg-[#f4ede1]">
-      <div className="container-shell grid gap-12 py-14 md:grid-cols-[1.3fr,0.7fr,0.8fr]">
+      <div className="container-shell grid gap-12 py-14 md:grid-cols-[1.2fr,0.8fr,0.9fr]">
         <div className="space-y-5 text-center md:text-left">
           <BrandMark size="footer" centered className="md:justify-start" />
           <p className="max-w-md text-sm leading-7 text-clay md:max-w-none">
@@ -28,7 +28,7 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="space-y-4">
+        <div className="space-y-4 text-center md:text-left">
           <p className="text-sm font-semibold uppercase tracking-[0.24em] text-clay">
             Quick Links
           </p>
@@ -41,7 +41,7 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="space-y-4">
+        <div className="space-y-4 text-center md:text-left">
           <p className="text-sm font-semibold uppercase tracking-[0.24em] text-clay">
             Visit & Order
           </p>
@@ -50,7 +50,7 @@ export function Footer() {
               <p key={line}>{line}</p>
             ))}
           </div>
-          <div className="flex items-center gap-4 pt-2">
+          <div className="flex items-center justify-center gap-4 pt-2 md:justify-start">
             {site.socials.map((social) => {
               const Icon =
                 socialIcons[social.label as keyof typeof socialIcons] ?? Camera;

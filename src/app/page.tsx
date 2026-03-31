@@ -27,7 +27,7 @@ export default function Home() {
     <>
       <HeroSection />
 
-      <section className="relative z-10 -mt-16">
+      <section className="relative z-10 -mt-10 md:-mt-14">
         <div className="container-shell grid gap-6 md:grid-cols-2 xl:grid-cols-4">
           {site.trustCards.map((item, index) => (
             <Reveal key={item.title} delay={index * 0.08}>

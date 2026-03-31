@@ -22,12 +22,12 @@ export function MenuBrowser() {
 
   return (
     <div className="space-y-8">
-      <div className="-mx-6 flex gap-4 overflow-x-auto px-6 pb-2 sm:mx-0 sm:flex-wrap sm:px-0">
+      <div className="-mx-6 flex snap-x snap-mandatory gap-4 overflow-x-auto px-6 pb-2 sm:mx-0 sm:flex-wrap sm:px-0">
         {productFilters.map((filter) => (
           <Button
             key={filter.id}
             variant={activeFilter === filter.id ? "default" : "outline"}
-            className="shrink-0"
+            className="shrink-0 snap-start"
             onClick={() => setActiveFilter(filter.id)}
           >
             {filter.label}
@@ -39,7 +39,7 @@ export function MenuBrowser() {
         <p className="text-sm uppercase tracking-[0.24em] text-clay">
           {filteredProducts.length} items ready to order
         </p>
-        <p className="hidden text-sm text-clay md:block">
+        <p className="text-sm text-clay md:text-right">
           WhatsApp to confirm availability, gifting packs, and bulk orders.
         </p>
       </div>

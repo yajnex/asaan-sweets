@@ -24,7 +24,7 @@ export function ProductCard({ product, priority = false }: ProductCardProps) {
       className="group gold-sheen overflow-hidden rounded-[32px] border border-brown/8 bg-white/78 shadow-[0_24px_55px_rgba(44,27,18,0.08)] hover:border-gold/24 hover:shadow-[0_32px_72px_rgba(44,27,18,0.14)]"
     >
       <Link href={`/product/${product.id}`} className="block">
-        <div className="relative aspect-[4/4.5] overflow-hidden bg-[#f4ebdd]">
+        <div className="relative aspect-[4/4.2] overflow-hidden bg-[#f4ebdd]">
           <SafeImage
             src={product.image}
             alt={product.name}
@@ -35,29 +35,29 @@ export function ProductCard({ product, priority = false }: ProductCardProps) {
           />
         </div>
       </Link>
-      <div className="space-y-6 p-8">
+      <div className="space-y-6 p-6 md:p-8">
         <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
           <Badge variant="gold" className="w-fit">
             {product.badge}
           </Badge>
-          <p className="text-[11px] uppercase tracking-[0.28em] text-clay">
+          <p className="text-[11px] font-semibold uppercase tracking-[0.24em] text-clay">
             {product.price}
           </p>
         </div>
-        <div className="space-y-4">
-          <h3 className="font-serif text-[32px] font-semibold leading-none text-brown">
+        <div className="space-y-3">
+          <h3 className="font-serif text-[28px] font-semibold leading-[1.02] text-brown md:text-[32px]">
             {product.name}
           </h3>
           <p className="text-sm leading-7 text-clay">{product.shortDescription}</p>
         </div>
-        <div className="flex flex-col gap-4 pt-2 sm:flex-row sm:items-center">
+        <div className="flex flex-col gap-3 pt-1 sm:flex-row sm:items-center sm:justify-between">
           <Button asChild size="sm" className="w-full sm:w-auto">
             <a href={getWhatsAppLink(product.name)}>
               <MessageCircle className="h-4 w-4" />
               Order
             </a>
           </Button>
-          <Button asChild variant="ghost" size="sm">
+          <Button asChild variant="ghost" size="sm" className="w-full sm:w-auto">
             <Link href={`/product/${product.id}`}>
               Details
               <ArrowUpRight className="h-4 w-4" />
