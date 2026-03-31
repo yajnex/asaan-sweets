@@ -25,8 +25,8 @@ export default function AboutPage() {
         image="/images/craft-atelier.svg"
       />
 
-      <section className="section-space">
-        <div className="container-shell grid gap-12 lg:grid-cols-[0.95fr,1.05fr] lg:items-center">
+      <section className="section-space-tight">
+        <div className="container-shell grid gap-8 lg:grid-cols-[0.95fr,1.05fr] lg:items-center">
           <Reveal>
             <div className="overflow-hidden rounded-[40px] border border-brown/8 bg-sand/55 shadow-[0_28px_72px_rgba(44,27,18,0.12)]">
               <Image
@@ -39,23 +39,23 @@ export default function AboutPage() {
             </div>
           </Reveal>
           <Reveal delay={0.1}>
-            <div className="space-y-8">
+            <div className="space-y-6">
               <SectionHeading
                 eyebrow="Legacy & Craft"
                 title="The recipes may be traditional, but the experience is intentionally refined"
                 description={site.story}
               />
               <div className="gold-divider" />
-              <div className="grid gap-6 sm:grid-cols-2">
+              <div className="grid gap-4 sm:grid-cols-2">
                 {site.values.map((value) => (
                   <div
                     key={value.title}
-                    className="luxury-panel rounded-[32px] p-8"
+                    className="luxury-panel rounded-[28px] p-6"
                   >
-                    <h3 className="font-serif text-[32px] font-semibold leading-none text-brown">
+                    <h3 className="font-serif text-[26px] font-semibold leading-none text-brown">
                       {value.title}
                     </h3>
-                    <p className="mt-4 text-sm leading-7 text-clay">
+                    <p className="mt-3 text-sm leading-6 text-clay">
                       {value.description}
                     </p>
                   </div>
@@ -66,8 +66,8 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section className="section-space bg-sand/35">
-        <div className="container-shell space-y-12">
+      <section className="section-space-tight bg-sand/35">
+        <div className="container-shell space-y-8">
           <Reveal>
             <SectionHeading
               eyebrow="Milestones"
@@ -75,17 +75,17 @@ export default function AboutPage() {
               description="The timeline is less about expansion and more about consistency: keeping the familiar taste intact while making ordering and gifting easier for modern customers."
             />
           </Reveal>
-          <div className="grid gap-6 lg:grid-cols-3">
+          <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
             {site.timeline.map((item, index) => (
               <Reveal key={item.year} delay={index * 0.08}>
-                <article className="surface-panel gold-sheen rounded-[32px] p-8">
+                <article className="surface-panel gold-sheen rounded-[28px] p-6">
                   <p className="text-sm font-semibold uppercase tracking-[0.3em] text-clay">
                     {item.year}
                   </p>
-                  <h3 className="mt-6 font-serif text-[32px] font-semibold leading-none text-brown">
+                  <h3 className="mt-4 font-serif text-[28px] font-semibold leading-none text-brown">
                     {item.title}
                   </h3>
-                  <p className="mt-4 text-sm leading-7 text-clay">
+                  <p className="mt-3 text-sm leading-6 text-clay">
                     {item.description}
                   </p>
                 </article>

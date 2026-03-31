@@ -51,7 +51,7 @@ export default function RootLayout({
     <html lang="en" className="h-full antialiased">
       <body className="min-h-full">
         <Navbar />
-        <main className="flex min-h-screen flex-col">{children}</main>
+        <main className="flex flex-col">{children}</main>
         <FloatingWhatsAppButton />
         <Footer />
       </body>

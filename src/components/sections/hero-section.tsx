@@ -15,7 +15,7 @@ export function HeroSection() {
   const reduceMotion = useReducedMotion();
 
   return (
-    <section className="relative isolate flex min-h-[100svh] items-end overflow-hidden bg-brown text-cream">
+    <section className="relative isolate overflow-hidden bg-brown pt-24 text-cream md:pt-28">
       <div className="absolute inset-0">
         <Image
           src="/images/hero-platter.svg"
@@ -29,12 +29,12 @@ export function HeroSection() {
         <div className="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-b from-transparent via-[#2c1b12]/34 to-[#f8f4ec]" />
       </div>
 
-      <div className="container-shell relative flex min-h-[100svh] w-full items-center justify-center pb-24 pt-28 md:pb-28 md:pt-32">
+      <div className="container-shell relative py-10 md:py-14">
         <motion.div
           initial={reduceMotion ? undefined : { opacity: 0, y: 28 }}
           animate={reduceMotion ? undefined : { opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
-          className="flex max-w-[840px] flex-col items-center gap-8 text-center md:gap-10"
+          className="mx-auto flex max-w-[760px] flex-col items-center gap-6 text-center md:gap-8"
         >
           <motion.div
             initial={reduceMotion ? undefined : { opacity: 0, scale: 0.96 }}
@@ -48,18 +48,18 @@ export function HeroSection() {
             initial={reduceMotion ? undefined : { opacity: 0, y: 18 }}
             animate={reduceMotion ? undefined : { opacity: 1, y: 0 }}
             transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1], delay: 0.12 }}
-            className="space-y-4 md:space-y-6"
+            className="space-y-3 md:space-y-4"
           >
             <p className="text-[10px] font-semibold uppercase tracking-[0.32em] text-cream/72 md:text-[11px]">
               Heritage Mithai House
             </p>
-            <h1 className="text-balance font-serif text-[44px] font-semibold leading-[0.9] sm:text-[56px] md:text-[96px]">
+            <h1 className="text-balance font-serif text-[40px] font-semibold leading-[0.92] sm:text-[52px] md:text-[72px]">
               38 Years of Sweet Legacy
             </h1>
-            <p className="mx-auto max-w-[560px] text-balance text-[16px] leading-7 text-cream/84 md:text-[20px] md:leading-8">
+            <p className="mx-auto max-w-[540px] text-balance text-[16px] leading-7 text-cream/84 md:text-[18px] md:leading-7">
               Authentic handmade sweets since 1987
             </p>
-            <p className="mx-auto max-w-[640px] text-balance text-[15px] leading-7 text-cream/72 md:text-[18px] md:leading-8">
+            <p className="mx-auto max-w-[620px] text-balance text-[15px] leading-6 text-cream/72 md:text-[17px] md:leading-7">
               Fresh mithai, savouries, and gifting favourites prepared with
               familiar recipes and packed for modern ordering on WhatsApp.
             </p>
@@ -69,7 +69,7 @@ export function HeroSection() {
             initial={reduceMotion ? undefined : { opacity: 0, y: 16 }}
             animate={reduceMotion ? undefined : { opacity: 1, y: 0 }}
             transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1], delay: 0.2 }}
-            className="flex w-full flex-col justify-center gap-4 sm:w-auto sm:flex-row"
+            className="flex w-full flex-col justify-center gap-3 sm:w-auto sm:flex-row"
           >
             <Button asChild size="lg" variant="gold" className="w-full sm:w-auto">
               <a href={getWhatsAppLink()}>
@@ -94,7 +94,7 @@ export function HeroSection() {
             initial={reduceMotion ? undefined : { opacity: 0, y: 14 }}
             animate={reduceMotion ? undefined : { opacity: 1, y: 0 }}
             transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1], delay: 0.28 }}
-            className="grid w-full max-w-[720px] gap-3 sm:grid-cols-2 xl:grid-cols-4"
+            className="grid w-full max-w-[640px] gap-2.5 sm:grid-cols-2 lg:grid-cols-4"
           >
             {site.heroBadges.map((badge) => (
               <Badge key={badge} variant="outline" className="justify-center">

@@ -54,9 +54,9 @@ export default async function ProductPage({ params }: ProductPageProps) {
 
   return (
     <>
-      <section className="pt-32 md:pt-36">
-        <div className="container-shell grid gap-12 py-12 lg:grid-cols-[0.98fr,1.02fr] lg:items-center">
-          <div className="overflow-hidden rounded-[32px] border border-brown/8 bg-[#efe4d3] shadow-[0_32px_72px_rgba(44,27,18,0.12)]">
+      <section className="pt-24 md:pt-28">
+        <div className="container-shell grid gap-8 py-8 md:py-10 lg:grid-cols-[0.98fr,1.02fr] lg:items-start">
+          <div className="overflow-hidden rounded-[28px] border border-brown/8 bg-[#efe4d3] shadow-[0_24px_48px_rgba(44,27,18,0.1)]">
             <Image
               src={product.image}
               alt={product.name}
@@ -67,7 +67,7 @@ export default async function ProductPage({ params }: ProductPageProps) {
             />
           </div>
 
-          <div className="space-y-8">
+          <div className="space-y-6">
             <Button asChild variant="link">
               <Link href="/menu">
                 <ArrowLeft className="h-4 w-4" />
@@ -75,52 +75,52 @@ export default async function ProductPage({ params }: ProductPageProps) {
               </Link>
             </Button>
 
-            <div className="space-y-6">
+            <div className="space-y-4">
               <Badge variant="gold" className="w-fit">
                 {product.badge}
               </Badge>
-              <h1 className="text-balance font-serif text-[48px] font-semibold leading-[0.96] text-brown md:text-[64px]">
+              <h1 className="text-balance font-serif text-[38px] font-semibold leading-[0.96] text-brown md:text-[56px]">
                 {product.name}
               </h1>
-              <p className="text-base leading-8 text-clay md:text-[18px]">
+              <p className="text-[15px] leading-6 text-clay md:text-[17px] md:leading-7">
                 {product.description}
               </p>
             </div>
 
-            <div className="grid gap-6 border-y border-brown/10 py-8 sm:grid-cols-2">
+            <div className="grid gap-4 border-y border-brown/10 py-6 sm:grid-cols-2">
               <div>
-                <p className="text-sm uppercase tracking-[0.24em] text-clay">Price</p>
-                <p className="mt-2 font-serif text-[32px] font-semibold leading-none text-brown">
+                <p className="text-[11px] uppercase tracking-[0.24em] text-clay">Price</p>
+                <p className="mt-2 font-serif text-[28px] font-semibold leading-none text-brown">
                   {product.price}
                 </p>
               </div>
               <div>
-                <p className="text-sm uppercase tracking-[0.24em] text-clay">
+                <p className="text-[11px] uppercase tracking-[0.24em] text-clay">
                   Best Known For
                 </p>
-                <p className="mt-2 text-sm leading-7 text-clay">{product.accent}</p>
+                <p className="mt-2 text-sm leading-6 text-clay">{product.accent}</p>
               </div>
             </div>
 
-            <div className="grid gap-6 sm:grid-cols-2">
-              <div className="rounded-[32px] border border-brown/8 bg-white/62 p-8">
-                <p className="text-sm uppercase tracking-[0.24em] text-clay">
+            <div className="grid gap-4 sm:grid-cols-2">
+              <div className="luxury-panel rounded-[28px] p-6">
+                <p className="text-[11px] uppercase tracking-[0.24em] text-clay">
                   Highlights
                 </p>
-                <div className="mt-4 space-y-4">
+                <div className="mt-3 space-y-3">
                   {product.highlights.map((highlight) => (
-                    <div key={highlight} className="flex gap-3 text-sm leading-7 text-clay">
+                    <div key={highlight} className="flex gap-3 text-sm leading-6 text-clay">
                       <Check className="mt-1 h-4 w-4 flex-none text-gold" />
                       <span>{highlight}</span>
                     </div>
                   ))}
                 </div>
               </div>
-              <div className="rounded-[32px] border border-brown/8 bg-white/62 p-8">
-                <p className="text-sm uppercase tracking-[0.24em] text-clay">
+              <div className="luxury-panel rounded-[28px] p-6">
+                <p className="text-[11px] uppercase tracking-[0.24em] text-clay">
                   Ingredients & Storage
                 </p>
-                <div className="mt-4 space-y-3 text-sm leading-7 text-clay">
+                <div className="mt-3 space-y-3 text-sm leading-6 text-clay">
                   <p>{product.ingredients.join(", ")}</p>
                   <p className="border-t border-brown/10 pt-4">
                     Shelf life: {product.shelfLife}
@@ -139,17 +139,17 @@ export default async function ProductPage({ params }: ProductPageProps) {
         </div>
       </section>
 
-      <section className="section-space bg-[#f4ecde]">
-        <div className="container-shell space-y-12">
-          <div className="space-y-4">
+      <section className="section-space-tight bg-[#f4ecde]">
+        <div className="container-shell space-y-8">
+          <div className="space-y-2">
             <p className="text-[10px] font-semibold uppercase tracking-[0.32em] text-clay">
               You May Also Like
             </p>
-            <h2 className="font-serif text-[40px] font-semibold leading-none text-brown">
+            <h2 className="font-serif text-[32px] font-semibold leading-none text-brown md:text-[42px]">
               More from the counter
             </h2>
           </div>
-          <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+          <div className="grid grid-cols-2 gap-4 md:grid-cols-3">
             {relatedProducts.map((relatedProduct) => (
               <ProductCard key={relatedProduct.id} product={relatedProduct} />
             ))}

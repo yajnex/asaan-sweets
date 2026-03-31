@@ -26,29 +26,29 @@ export default function ContactPage() {
         image="/images/craft-atelier.svg"
       />
 
-      <section className="section-space">
-        <div className="container-shell grid gap-8 lg:grid-cols-[0.88fr,1.12fr]">
+      <section className="section-space-tight">
+        <div className="container-shell grid gap-6 lg:grid-cols-[0.9fr,1.1fr]">
           <Reveal>
-            <div className="space-y-6">
-              <div className="surface-panel gold-sheen rounded-[32px] p-8">
+            <div className="space-y-4">
+              <div className="surface-panel gold-sheen rounded-[28px] p-6">
                 <div className="flex items-center gap-4">
                   <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-[linear-gradient(135deg,#342016,#24140d)] text-cream">
                     <MessageCircle className="h-5 w-5" />
                   </div>
                   <div>
-                    <p className="text-sm uppercase tracking-[0.24em] text-clay">
+                    <p className="text-[11px] uppercase tracking-[0.24em] text-clay">
                       WhatsApp
                     </p>
-                    <h2 className="font-serif text-[32px] font-semibold leading-none text-brown">
+                    <h2 className="font-serif text-[28px] font-semibold leading-none text-brown">
                       Fastest way to order
                     </h2>
                   </div>
                 </div>
-                <p className="mt-6 text-sm leading-7 text-clay">
+                <p className="mt-4 text-sm leading-6 text-clay">
                   Send your selection and quantity on WhatsApp. We will confirm
                   availability, price, and packaging quickly.
                 </p>
-                <div className="mt-8 flex flex-col gap-4">
+                <div className="mt-5 flex flex-col gap-3">
                   <Button asChild variant="gold" className="w-full">
                     <a href={getWhatsAppLink()}>Message to Order</a>
                   </Button>
@@ -61,28 +61,28 @@ export default function ContactPage() {
                 </div>
               </div>
 
-              <div className="grid gap-6 sm:grid-cols-2">
-                <div className="luxury-panel rounded-[32px] p-8">
+              <div className="grid gap-4 sm:grid-cols-2">
+                <div className="luxury-panel rounded-[28px] p-6">
                   <div className="flex items-center gap-4">
                     <MapPin className="h-5 w-5 text-gold" />
-                    <p className="text-sm font-semibold uppercase tracking-[0.24em] text-clay">
+                    <p className="text-[11px] font-semibold uppercase tracking-[0.24em] text-clay">
                       Address
                     </p>
                   </div>
-                  <div className="mt-4 space-y-2 text-sm leading-7 text-clay">
+                  <div className="mt-3 space-y-1.5 text-sm leading-6 text-clay">
                     {site.addressLines.map((line) => (
                       <p key={line}>{line}</p>
                     ))}
                   </div>
                 </div>
-                <div className="luxury-panel rounded-[32px] p-8">
+                <div className="luxury-panel rounded-[28px] p-6">
                   <div className="flex items-center gap-4">
                     <Clock3 className="h-5 w-5 text-gold" />
-                    <p className="text-sm font-semibold uppercase tracking-[0.24em] text-clay">
+                    <p className="text-[11px] font-semibold uppercase tracking-[0.24em] text-clay">
                       Hours
                     </p>
                   </div>
-                  <div className="mt-4 space-y-2 text-sm leading-7 text-clay">
+                  <div className="mt-3 space-y-1.5 text-sm leading-6 text-clay">
                     {site.hours.map((slot) => (
                       <p key={slot}>{slot}</p>
                     ))}
@@ -93,11 +93,11 @@ export default function ContactPage() {
           </Reveal>
 
           <Reveal delay={0.12}>
-            <div className="overflow-hidden rounded-[32px] border border-brown/8 bg-white shadow-[0_28px_72px_rgba(44,27,18,0.1)]">
+            <div className="overflow-hidden rounded-[28px] border border-brown/8 bg-white shadow-[0_24px_48px_rgba(44,27,18,0.1)]">
               <iframe
                 title="Asaan Sweets map"
                 src={site.mapEmbedUrl}
-                className="h-[420px] w-full"
+                className="h-[360px] w-full md:h-[420px]"
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
               />

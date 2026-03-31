@@ -15,7 +15,7 @@ const socialIcons = {
 export function Footer() {
   return (
     <footer className="border-t border-brown/8 bg-sand/40">
-      <div className="container-shell grid gap-12 py-14 md:grid-cols-[1.2fr,0.8fr,0.9fr]">
+      <div className="container-shell grid gap-8 py-10 md:grid-cols-[1.2fr,0.8fr,0.9fr] md:py-12">
         <div className="space-y-5 text-center md:text-left">
           <BrandMark size="footer" centered className="md:justify-start" />
           <p className="max-w-md text-sm leading-7 text-clay md:max-w-none">
@@ -80,7 +80,7 @@ export function Footer() {
         </div>
       </div>
       <div className="border-t border-brown/8">
-        <div className="container-shell flex flex-col gap-3 py-5 text-xs uppercase tracking-[0.2em] text-clay/80 md:flex-row md:items-center md:justify-between">
+        <div className="container-shell flex flex-col gap-2 py-4 text-xs uppercase tracking-[0.2em] text-clay/80 md:flex-row md:items-center md:justify-between">
           <p>{site.name} | Handcrafted since {site.established}</p>
           <p>WhatsApp-first ordering for fast enquiries and repeat orders.</p>
         </div>

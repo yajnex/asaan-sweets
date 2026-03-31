@@ -20,7 +20,7 @@ export default function MenuPage() {
         description="Filter the menu by signature mithai, milk classics, and savoury favourites, then move straight into WhatsApp ordering."
         image="/images/hero-platter.svg"
       />
-      <section className="section-space">
+      <section className="section-space-tight">
         <div className="container-shell">
           <MenuBrowser />
         </div>

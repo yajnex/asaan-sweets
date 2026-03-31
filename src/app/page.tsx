@@ -24,7 +24,7 @@ export default function Home() {
       <HeroSection />
 
       <section className="section-space-tight bg-cream">
-        <div className="container-shell space-y-10">
+        <div className="container-shell space-y-8">
           <Reveal>
             <SectionHeading
               eyebrow="Why Families Trust Us"
@@ -43,9 +43,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="featured">
-        <FeaturedProductsSection products={featuredProducts} />
-      </section>
+      <FeaturedProductsSection products={featuredProducts} />
 
       <AboutPreviewSection />
       <GallerySection />

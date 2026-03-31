@@ -88,20 +88,20 @@ button:focus-visible,
 .container-shell {
   margin-inline: auto;
   width: 100%;
-  max-width: 1280px;
-  padding-inline: 1.5rem;
+  max-width: 80rem;
+  padding-inline: 1rem;
 }
 
 .section-space {
-  padding-block: 5.5rem;
+  padding-block: 4rem;
 }
 
 .section-space-tight {
-  padding-block: 4.5rem;
+  padding-block: 3rem;
 }
 
 .section-space-loose {
-  padding-block: 6.5rem;
+  padding-block: 4.75rem;
 }
 
 .surface-panel {
@@ -168,18 +168,18 @@ button:focus-visible,
 
 @media (min-width: 768px) {
   .container-shell {
-    padding-inline: 2.5rem;
+    padding-inline: 1.5rem;
   }
 
   .section-space {
-    padding-block: 7.5rem;
+    padding-block: 5rem;
   }
 
   .section-space-tight {
-    padding-block: 5.5rem;
+    padding-block: 4rem;
   }
 
   .section-space-loose {
-    padding-block: 8.5rem;
+    padding-block: 5.75rem;
   }
 }
