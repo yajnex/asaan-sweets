@@ -46,8 +46,8 @@ body {
   overflow-x: hidden;
   background-color: #f8f4ec;
   background-image:
-    radial-gradient(circle at top left, rgba(212, 175, 55, 0.1), transparent 30%),
-    linear-gradient(180deg, #faf6ef 0%, #f8f4ec 52%, #f4ede2 100%);
+    radial-gradient(circle at top left, rgba(212, 175, 55, 0.05), transparent 24%),
+    linear-gradient(180deg, #fbf7f0 0%, #f8f4ec 56%, #f5eee2 100%);
   color: var(--foreground);
   font-family: var(--font-body), sans-serif;
   text-rendering: optimizeLegibility;

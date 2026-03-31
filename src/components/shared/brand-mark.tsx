@@ -10,7 +10,7 @@ type BrandMarkProps = {
 };
 
 const sizeClasses = {
-  nav: "h-14 w-14 md:h-[72px] md:w-[72px]",
+  nav: "h-12 w-12 md:h-16 md:w-16",
   hero: "h-32 w-32 md:h-40 md:w-40",
   footer: "h-24 w-24 md:h-28 md:w-28",
 } as const;

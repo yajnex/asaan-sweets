@@ -33,13 +33,11 @@ export function Navbar() {
   }, []);
 
   return (
-    <header className="fixed inset-x-0 top-0 z-50 px-4 pt-3 md:px-6 md:pt-4">
+    <header className="fixed inset-x-0 top-0 z-50 px-4 pt-2.5 md:px-6 md:pt-3">
       <div
         className={cn(
-          "mx-auto grid max-w-[1280px] grid-cols-[48px_1fr_48px] items-center rounded-full border px-3 py-2 transition-all md:grid-cols-[56px_1fr_56px] md:px-5 lg:grid-cols-[1fr_auto_1fr]",
-          scrolled || pathname !== "/"
-            ? "border-brown/10 bg-[#fbf7f0]/86 shadow-[0_18px_45px_rgba(44,27,18,0.12)] backdrop-blur-xl"
-            : "border-white/15 bg-white/8 shadow-[0_18px_45px_rgba(44,27,18,0.08)] backdrop-blur-xl",
+          "mx-auto grid max-w-7xl grid-cols-[44px_1fr_44px] items-center rounded-full border border-brown/10 bg-[#fbf7f0]/94 px-3 py-1.5 shadow-[0_14px_36px_rgba(44,27,18,0.12)] backdrop-blur-xl transition-all md:grid-cols-[52px_1fr_52px] md:px-5 lg:grid-cols-[1fr_auto_1fr]",
+          scrolled ? "translate-y-0 shadow-[0_18px_42px_rgba(44,27,18,0.14)]" : "",
         )}
       >
         <div className="flex items-center justify-start">
@@ -56,9 +54,7 @@ export function Navbar() {
                     "text-sm font-medium tracking-[0.02em]",
                     active
                       ? "text-brown"
-                      : scrolled || pathname !== "/"
-                        ? "text-clay hover:text-brown"
-                        : "text-cream/82 hover:text-cream",
+                      : "text-clay hover:text-brown",
                   )}
                 >
                   {item.label}
@@ -69,16 +65,7 @@ export function Navbar() {
 
           <Sheet>
             <SheetTrigger asChild className="lg:hidden">
-              <Button
-                variant="outline"
-                size="icon"
-                className={
-                  scrolled || pathname !== "/"
-                    ? undefined
-                    : "border-white/15 bg-white/10 text-cream hover:bg-white/15"
-                }
-                aria-label="Open menu"
-              >
+              <Button variant="outline" size="icon" aria-label="Open menu">
                 <Menu className="h-5 w-5" />
               </Button>
             </SheetTrigger>
