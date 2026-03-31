@@ -92,13 +92,13 @@ export function GallerySection() {
   const secondRow = site.gallery.slice(3);
 
   return (
-    <section className="section-space bg-[#f4ecde]">
+    <section className="section-space bg-sand/30">
       <div className="container-shell space-y-12">
         <Reveal>
           <SectionHeading
             eyebrow="Gallery"
             title="A moving edit of craft, colour, and celebration-ready trays"
-            description="Instead of a static grid, the gallery now behaves like a brand film: prep, finishing, plating, and gifting moments drifting past in a premium loop."
+            description="The gallery behaves like a premium brand reel: prep, finishing, plating, and gifting moments drifting past with just enough motion to feel alive."
             align="center"
           />
         </Reveal>

@@ -3,14 +3,14 @@
 :root {
   --background: #f8f4ec;
   --foreground: #2c1b12;
-  --card: rgba(255, 250, 243, 0.8);
+  --card: rgba(255, 250, 243, 0.84);
   --muted: #eadfce;
   --muted-foreground: #6e5646;
   --border: rgba(44, 27, 18, 0.12);
   --accent: #d4af37;
   --ring: rgba(212, 175, 55, 0.28);
-  --shadow: 0 32px 72px rgba(44, 27, 18, 0.12);
-  --shadow-strong: 0 40px 96px rgba(44, 27, 18, 0.16);
+  --shadow: 0 28px 60px rgba(44, 27, 18, 0.1);
+  --shadow-strong: 0 40px 96px rgba(44, 27, 18, 0.14);
   --font-body: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto,
     "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif;
   --font-display: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
@@ -45,11 +45,12 @@ body {
   min-height: 100vh;
   overflow-x: hidden;
   background:
-    radial-gradient(circle at top left, rgba(212, 175, 55, 0.14), transparent 32%),
-    radial-gradient(circle at top right, rgba(107, 69, 38, 0.05), transparent 28%),
-    linear-gradient(180deg, #fbf7f0 0%, #f8f4ec 42%, #f3ede2 100%);
+    radial-gradient(circle at top left, rgba(212, 175, 55, 0.13), transparent 34%),
+    radial-gradient(circle at top right, rgba(44, 27, 18, 0.04), transparent 24%),
+    linear-gradient(180deg, #fbf7f0 0%, #f8f4ec 48%, #f5eee3 100%);
   color: var(--foreground);
   font-family: var(--font-body), sans-serif;
+  text-rendering: optimizeLegibility;
 }
 
 ::selection {
@@ -87,25 +88,38 @@ button:focus-visible,
 .container-shell {
   margin-inline: auto;
   width: 100%;
-  max-width: 1240px;
+  max-width: 1280px;
   padding-inline: 1.5rem;
 }
 
 .section-space {
-  padding-block: 5rem;
+  padding-block: 5.5rem;
 }
 
 .section-space-tight {
-  padding-block: 4rem;
+  padding-block: 4.5rem;
+}
+
+.section-space-loose {
+  padding-block: 6.5rem;
 }
 
 .surface-panel {
   border: 1px solid rgba(44, 27, 18, 0.1);
   background:
-    linear-gradient(180deg, rgba(255, 252, 248, 0.92), rgba(255, 248, 239, 0.76)),
+    linear-gradient(180deg, rgba(255, 252, 248, 0.94), rgba(255, 248, 239, 0.82)),
     linear-gradient(135deg, rgba(212, 175, 55, 0.08), transparent 36%);
   box-shadow: var(--shadow);
   backdrop-filter: blur(14px);
+}
+
+.luxury-panel {
+  border: 1px solid rgba(44, 27, 18, 0.08);
+  background:
+    linear-gradient(180deg, rgba(255, 252, 248, 0.92), rgba(255, 249, 242, 0.78)),
+    radial-gradient(circle at top right, rgba(212, 175, 55, 0.12), transparent 26%);
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(12px);
 }
 
 .gold-sheen {
@@ -154,14 +168,18 @@ button:focus-visible,
 
 @media (min-width: 768px) {
   .container-shell {
-    padding-inline: 2rem;
+    padding-inline: 2.5rem;
   }
 
   .section-space {
-    padding-block: 6.5rem;
+    padding-block: 7.5rem;
   }
 
   .section-space-tight {
-    padding-block: 5rem;
+    padding-block: 5.5rem;
+  }
+
+  .section-space-loose {
+    padding-block: 8.5rem;
   }
 }

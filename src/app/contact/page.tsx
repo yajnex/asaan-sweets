@@ -62,7 +62,7 @@ export default function ContactPage() {
               </div>
 
               <div className="grid gap-6 sm:grid-cols-2">
-                <div className="rounded-[32px] border border-brown/8 bg-white/62 p-8">
+                <div className="luxury-panel rounded-[32px] p-8">
                   <div className="flex items-center gap-4">
                     <MapPin className="h-5 w-5 text-gold" />
                     <p className="text-sm font-semibold uppercase tracking-[0.24em] text-clay">
@@ -75,7 +75,7 @@ export default function ContactPage() {
                     ))}
                   </div>
                 </div>
-                <div className="rounded-[32px] border border-brown/8 bg-white/62 p-8">
+                <div className="luxury-panel rounded-[32px] p-8">
                   <div className="flex items-center gap-4">
                     <Clock3 className="h-5 w-5 text-gold" />
                     <p className="text-sm font-semibold uppercase tracking-[0.24em] text-clay">

@@ -18,13 +18,13 @@ export function SectionHeading({
   return (
     <div
       className={cn(
-        "max-w-2xl space-y-6",
+        "max-w-[720px] space-y-4 md:space-y-6",
         align === "center" && "mx-auto text-center",
       )}
     >
       <p
         className={cn(
-          "text-[10px] font-semibold uppercase tracking-[0.32em]",
+          "text-[10px] font-semibold uppercase tracking-[0.3em] md:text-[11px]",
           light ? "text-cream/70" : "text-clay",
         )}
       >
@@ -32,7 +32,7 @@ export function SectionHeading({
       </p>
       <h2
         className={cn(
-          "text-balance font-serif text-[40px] font-semibold leading-[1] md:text-[56px]",
+          "text-balance font-serif text-[36px] font-semibold leading-[0.96] md:text-[64px]",
           light ? "text-cream" : "text-brown",
         )}
       >
@@ -40,7 +40,7 @@ export function SectionHeading({
       </h2>
       <p
         className={cn(
-          "text-balance text-base leading-8 md:text-[18px]",
+          "text-balance text-[15px] leading-7 md:text-[18px] md:leading-8",
           light ? "text-cream/78" : "text-clay",
         )}
       >

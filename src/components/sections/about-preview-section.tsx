@@ -12,7 +12,7 @@ export function AboutPreviewSection() {
     <section className="section-space">
       <div className="container-shell grid gap-12 lg:grid-cols-[1.05fr,0.95fr] lg:items-center">
         <Reveal>
-          <div className="relative overflow-hidden rounded-[32px] bg-[#efe4d2] shadow-[0_28px_72px_rgba(44,27,18,0.12)]">
+          <div className="relative overflow-hidden rounded-[40px] border border-brown/8 bg-sand/55 shadow-[0_28px_72px_rgba(44,27,18,0.12)]">
             <Image
               src="/images/craft-atelier.svg"
               alt="Asaan Sweets craft and preparation"
@@ -21,6 +21,17 @@ export function AboutPreviewSection() {
               sizes="(min-width: 1024px) 50vw, 100vw"
               className="h-full w-full object-cover"
             />
+            <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(44,27,18,0.02),transparent_35%,rgba(44,27,18,0.34))]" />
+            <div className="absolute inset-x-0 bottom-0 p-6 md:p-8">
+              <div className="rounded-[28px] border border-white/12 bg-brown/34 p-5 backdrop-blur-sm md:max-w-[72%]">
+                <p className="text-[10px] font-semibold uppercase tracking-[0.3em] text-cream/70">
+                  Since 1987
+                </p>
+                <p className="mt-3 font-serif text-[28px] font-semibold leading-[1] text-cream md:text-[34px]">
+                  The kitchen still runs on patience, not shortcuts.
+                </p>
+              </div>
+            </div>
           </div>
         </Reveal>
 
@@ -28,16 +39,18 @@ export function AboutPreviewSection() {
           <div className="space-y-8">
             <SectionHeading
               eyebrow="Our Story"
-              title="Crafted with the patience of a heritage kitchen"
+              title="Crafted with the warmth of a neighbourhood mithai house"
               description={site.story}
             />
             <div className="space-y-4">
               {site.craftPoints.map((point) => (
                 <div
                   key={point}
-                  className="flex items-center gap-4 rounded-[24px] border border-brown/10 bg-white/64 px-6 py-4 text-sm text-clay"
+                  className="luxury-panel flex items-center gap-4 rounded-[24px] px-6 py-4 text-sm text-clay"
                 >
-                  <span className="h-2 w-2 rounded-full bg-gold" />
+                  <span className="flex h-8 w-8 items-center justify-center rounded-full bg-[linear-gradient(135deg,rgba(250,235,188,0.7),rgba(212,175,55,0.24))] text-gold">
+                    <span className="h-2.5 w-2.5 rounded-full bg-gold" />
+                  </span>
                   {point}
                 </div>
               ))}

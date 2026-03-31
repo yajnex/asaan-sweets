@@ -2,7 +2,9 @@ import Link from "next/link";
 import { Camera, MessageCircle, Phone, Users } from "lucide-react";
 
 import { BrandMark } from "@/components/shared/brand-mark";
+import { Button } from "@/components/ui/button";
 import { site } from "@/data/site";
+import { getWhatsAppLink } from "@/lib/whatsapp";
 
 const socialIcons = {
   Instagram: Camera,
@@ -12,7 +14,7 @@ const socialIcons = {
 
 export function Footer() {
   return (
-    <footer className="border-t border-brown/8 bg-[#f4ede1]">
+    <footer className="border-t border-brown/8 bg-sand/40">
       <div className="container-shell grid gap-12 py-14 md:grid-cols-[1.2fr,0.8fr,0.9fr]">
         <div className="space-y-5 text-center md:text-left">
           <BrandMark size="footer" centered className="md:justify-start" />
@@ -20,6 +22,12 @@ export function Footer() {
             Traditional Indian sweets and snacks made with patience, familiar
             methods, and a service experience designed for trust.
           </p>
+          <Button asChild variant="gold" className="w-full md:w-auto">
+            <a href={getWhatsAppLink()}>
+              <MessageCircle className="h-4 w-4" />
+              Order on WhatsApp
+            </a>
+          </Button>
           <div className="flex items-center justify-center gap-3 text-sm text-clay md:justify-start">
             <Phone className="h-4 w-4 text-gold" />
             <a href={site.phoneHref} className="hover:text-brown">

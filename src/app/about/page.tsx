@@ -28,7 +28,7 @@ export default function AboutPage() {
       <section className="section-space">
         <div className="container-shell grid gap-12 lg:grid-cols-[0.95fr,1.05fr] lg:items-center">
           <Reveal>
-            <div className="overflow-hidden rounded-[32px] bg-[#efe3d2] shadow-[0_28px_72px_rgba(44,27,18,0.12)]">
+            <div className="overflow-hidden rounded-[40px] border border-brown/8 bg-sand/55 shadow-[0_28px_72px_rgba(44,27,18,0.12)]">
               <Image
                 src="/images/kitchen-prep.svg"
                 alt="Ingredients and preparation at Asaan Sweets"
@@ -50,7 +50,7 @@ export default function AboutPage() {
                 {site.values.map((value) => (
                   <div
                     key={value.title}
-                    className="rounded-[32px] border border-brown/8 bg-white/62 p-8"
+                    className="luxury-panel rounded-[32px] p-8"
                   >
                     <h3 className="font-serif text-[32px] font-semibold leading-none text-brown">
                       {value.title}
@@ -66,7 +66,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      <section className="section-space bg-[#f4ecde]">
+      <section className="section-space bg-sand/35">
         <div className="container-shell space-y-12">
           <Reveal>
             <SectionHeading

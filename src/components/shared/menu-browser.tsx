@@ -21,8 +21,9 @@ export function MenuBrowser() {
   }, [activeFilter]);
 
   return (
-    <div className="space-y-8">
-      <div className="-mx-6 flex snap-x snap-mandatory gap-4 overflow-x-auto px-6 pb-2 sm:mx-0 sm:flex-wrap sm:px-0">
+    <div className="space-y-10">
+      <div className="luxury-panel rounded-[32px] p-4 md:p-5">
+        <div className="-mx-2 flex snap-x snap-mandatory gap-3 overflow-x-auto px-2 pb-2 sm:mx-0 sm:flex-wrap sm:px-0 sm:pb-0">
         {productFilters.map((filter) => (
           <Button
             key={filter.id}
@@ -33,13 +34,19 @@ export function MenuBrowser() {
             {filter.label}
           </Button>
         ))}
+        </div>
       </div>
 
-      <div className="flex flex-col gap-4 border-t border-brown/10 pt-8 md:flex-row md:items-center md:justify-between">
-        <p className="text-sm uppercase tracking-[0.24em] text-clay">
+      <div className="flex flex-col gap-4 border-t border-brown/10 pt-8 md:flex-row md:items-end md:justify-between">
+        <div className="space-y-2">
+          <p className="text-sm uppercase tracking-[0.24em] text-clay">
           {filteredProducts.length} items ready to order
-        </p>
-        <p className="text-sm text-clay md:text-right">
+          </p>
+          <p className="font-serif text-[28px] font-semibold leading-none text-brown md:text-[34px]">
+            Fresh sweets, savouries, and gifting favourites
+          </p>
+        </div>
+        <p className="max-w-md text-sm leading-7 text-clay md:text-right">
           WhatsApp to confirm availability, gifting packs, and bulk orders.
         </p>
       </div>
