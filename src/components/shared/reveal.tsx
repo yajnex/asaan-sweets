@@ -22,7 +22,7 @@ export function Reveal({
   return (
     <motion.div
       className={cn(className)}
-      initial={shouldReduceMotion ? undefined : { opacity: 0, y, scale: 0.985 }}
+      initial={shouldReduceMotion ? undefined : { opacity: 1, y, scale: 1 }}
       whileInView={shouldReduceMotion ? undefined : { opacity: 1, y: 0, scale: 1 }}
       viewport={{ once: true, amount: 0.22 }}
       transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1], delay }}

@@ -31,13 +31,13 @@ export function HeroSection() {
 
       <div className="container-shell relative py-10 md:py-14">
         <motion.div
-          initial={reduceMotion ? undefined : { opacity: 0, y: 28 }}
+          initial={reduceMotion ? undefined : { opacity: 1, y: 20 }}
           animate={reduceMotion ? undefined : { opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
           className="mx-auto flex max-w-[760px] flex-col items-center gap-6 text-center md:gap-8"
         >
           <motion.div
-            initial={reduceMotion ? undefined : { opacity: 0, scale: 0.96 }}
+            initial={reduceMotion ? undefined : { opacity: 1, scale: 0.98 }}
             animate={reduceMotion ? undefined : { opacity: 1, scale: 1 }}
             transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1], delay: 0.05 }}
           >
@@ -45,7 +45,7 @@ export function HeroSection() {
           </motion.div>
 
           <motion.div
-            initial={reduceMotion ? undefined : { opacity: 0, y: 18 }}
+            initial={reduceMotion ? undefined : { opacity: 1, y: 14 }}
             animate={reduceMotion ? undefined : { opacity: 1, y: 0 }}
             transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1], delay: 0.12 }}
             className="space-y-3 md:space-y-4"
@@ -66,7 +66,7 @@ export function HeroSection() {
           </motion.div>
 
           <motion.div
-            initial={reduceMotion ? undefined : { opacity: 0, y: 16 }}
+            initial={reduceMotion ? undefined : { opacity: 1, y: 12 }}
             animate={reduceMotion ? undefined : { opacity: 1, y: 0 }}
             transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1], delay: 0.2 }}
             className="flex w-full flex-col justify-center gap-3 sm:w-auto sm:flex-row"
@@ -91,7 +91,7 @@ export function HeroSection() {
           </motion.div>
 
           <motion.div
-            initial={reduceMotion ? undefined : { opacity: 0, y: 14 }}
+            initial={reduceMotion ? undefined : { opacity: 1, y: 10 }}
             animate={reduceMotion ? undefined : { opacity: 1, y: 0 }}
             transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1], delay: 0.28 }}
             className="grid w-full max-w-[640px] gap-2.5 sm:grid-cols-2 lg:grid-cols-4"
