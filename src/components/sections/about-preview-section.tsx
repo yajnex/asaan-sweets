@@ -22,12 +22,12 @@ export function AboutPreviewSection() {
               className="h-full w-full object-cover"
             />
             <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(44,27,18,0.02),transparent_35%,rgba(44,27,18,0.34))]" />
-            <div className="absolute inset-x-0 bottom-0 p-6 md:p-8">
-              <div className="rounded-[28px] border border-white/12 bg-brown/34 p-5 backdrop-blur-sm md:max-w-[72%]">
+            <div className="absolute inset-x-0 bottom-0 p-5 md:p-6">
+              <div className="rounded-[24px] border border-white/12 bg-brown/34 px-5 py-4 backdrop-blur-sm md:max-w-[68%]">
                 <p className="text-[10px] font-semibold uppercase tracking-[0.3em] text-cream/70">
                   Since 1987
                 </p>
-                <p className="mt-3 font-serif text-[28px] font-semibold leading-[1] text-cream md:text-[34px]">
+                <p className="mt-2 font-serif text-[28px] font-semibold leading-[1] text-cream md:text-[34px]">
                   The kitchen still runs on patience, not shortcuts.
                 </p>
               </div>
