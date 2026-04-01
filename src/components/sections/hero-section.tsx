@@ -46,20 +46,19 @@ export function HeroSection() {
           </Reveal>
 
           <Reveal delay={0.08} className="order-last lg:order-none">
-            <div className="relative mx-auto flex aspect-square w-full max-w-[520px] items-center justify-center lg:justify-end">
-              <div className="absolute inset-[8%] rounded-full bg-[radial-gradient(circle,rgba(255,251,243,0.98)_0%,rgba(249,238,211,0.88)_44%,rgba(244,226,182,0.34)_66%,rgba(248,244,236,0)_84%)]" />
-              <div className="absolute inset-[4%] rounded-full border border-[#d4af37]/18" />
-              <div className="absolute inset-[14%] rounded-full border border-[#b8891d]/14" />
-              <div className="absolute inset-[23%] rounded-full border border-[#2c1b12]/7" />
-              <div className="absolute left-1/2 top-[18%] h-24 w-24 -translate-x-1/2 rounded-full bg-[radial-gradient(circle,rgba(255,243,203,0.5),transparent_72%)] blur-2xl md:h-32 md:w-32" />
-              <div className="absolute bottom-[16%] left-[14%] h-16 w-16 rounded-full border border-[#d4af37]/20 bg-white/35 blur-[1px]" />
-              <div className="absolute right-[12%] top-[22%] h-12 w-12 rounded-full border border-[#2c1b12]/8 bg-[#fffaf0]/40 blur-[1px]" />
-              <div className="absolute left-1/2 top-4 -translate-x-1/2 rounded-full border border-[#d4af37]/30 bg-white/72 px-4 py-2 text-[11px] font-semibold uppercase tracking-[0.26em] text-[#7b5c39] shadow-[0_14px_30px_rgba(44,27,18,0.08)] backdrop-blur-md md:px-5">
-                Heritage Seal
+            <div className="relative mx-auto flex aspect-[1/1.08] w-full max-w-[560px] items-center justify-center lg:justify-end">
+              <div className="absolute inset-x-[10%] inset-y-[6%] rounded-t-[999px] rounded-b-[40px] border border-[#d4af37]/18 bg-[linear-gradient(180deg,rgba(255,251,243,0.96),rgba(248,236,208,0.82)_56%,rgba(247,239,225,0.44))] shadow-[0_34px_80px_rgba(44,27,18,0.12)]" />
+              <div className="absolute inset-x-[14%] inset-y-[10%] rounded-t-[999px] rounded-b-[34px] border border-white/70" />
+              <div className="absolute inset-x-[22%] top-[17%] bottom-[19%] rounded-full bg-[radial-gradient(circle,rgba(255,248,226,1)_0%,rgba(243,225,175,0.58)_46%,rgba(248,244,236,0)_74%)]" />
+              <div className="absolute inset-x-[27%] top-[24%] h-[32%] rounded-full bg-[radial-gradient(circle,rgba(212,175,55,0.32),transparent_72%)] blur-3xl" />
+              <div className="absolute inset-x-[22%] top-[16%] h-[52%] rounded-full border border-[#d4af37]/16" />
+              <div className="absolute inset-x-[26%] top-[20%] h-[44%] rounded-full border border-white/60" />
+              <div className="absolute bottom-[15%] left-1/2 h-px w-40 -translate-x-1/2 bg-[linear-gradient(90deg,transparent,rgba(212,175,55,0.86),transparent)] md:w-52" />
+              <div className="absolute bottom-[9.5%] left-1/2 -translate-x-1/2 text-center text-[11px] font-semibold uppercase tracking-[0.28em] text-[#7b5c39]">
+                Trusted Since 1987
               </div>
               <div className="relative z-10">
-                <span className="pointer-events-none absolute inset-1/2 -z-10 h-60 w-60 -translate-x-1/2 -translate-y-1/2 rounded-full bg-[radial-gradient(circle,rgba(212,175,55,0.42)_0%,rgba(212,175,55,0.18)_42%,transparent_72%)] blur-3xl md:h-80 md:w-80 lg:h-[26rem] lg:w-[26rem]" />
-                <span className="pointer-events-none absolute inset-1/2 -z-10 h-[72%] w-[72%] -translate-x-1/2 -translate-y-1/2 rounded-full border border-white/70" />
+                <span className="pointer-events-none absolute inset-1/2 -z-10 h-72 w-72 -translate-x-1/2 -translate-y-1/2 rounded-full bg-[radial-gradient(circle,rgba(212,175,55,0.38)_0%,rgba(212,175,55,0.14)_46%,transparent_74%)] blur-3xl md:h-[26rem] md:w-[26rem] lg:h-[30rem] lg:w-[30rem]" />
                 <BrandMark size="hero" />
               </div>
             </div>
