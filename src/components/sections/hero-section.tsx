@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, MessageCircle } from "lucide-react";
 
+import { BrandMark } from "@/components/shared/brand-mark";
 import { Reveal } from "@/components/shared/reveal";
 import { Button } from "@/components/ui/button";
 import { getWhatsAppLink } from "@/lib/whatsapp";
@@ -46,17 +47,24 @@ export function HeroSection() {
           </Reveal>
 
           <Reveal delay={0.08} className="order-last lg:order-none">
-            <div className="relative overflow-hidden rounded-[28px] border border-[#d4af37]/20 bg-white/80 shadow-[0_28px_64px_rgba(44,27,18,0.14)]">
-              <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(212,175,55,0.18),transparent_36%)]" />
-              <div className="relative aspect-[5/4]">
-                <Image
-                  src="/images/products/motichoor-laddu.svg"
-                  alt="Freshly prepared motichoor laddu from Asaan Sweets"
-                  fill
-                  priority
-                  sizes="(min-width: 1024px) 440px, (min-width: 768px) 55vw, 100vw"
-                  className="object-cover"
-                />
+            <div className="relative flex flex-col items-center gap-4 lg:items-end lg:gap-6">
+              <div className="relative z-10">
+                <span className="pointer-events-none absolute inset-1/2 -z-10 h-48 w-48 -translate-x-1/2 -translate-y-1/2 rounded-full bg-[radial-gradient(circle,rgba(212,175,55,0.32)_0%,rgba(212,175,55,0.16)_42%,transparent_72%)] blur-3xl md:h-64 md:w-64 lg:h-72 lg:w-72" />
+                <BrandMark size="hero" />
+              </div>
+
+              <div className="relative w-full max-w-[460px] overflow-hidden rounded-[28px] border border-[#d4af37]/20 bg-white/80 shadow-[0_28px_64px_rgba(44,27,18,0.14)]">
+                <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_right,rgba(212,175,55,0.18),transparent_36%)]" />
+                <div className="relative aspect-[5/4]">
+                  <Image
+                    src="/images/products/motichoor-laddu.svg"
+                    alt="Freshly prepared motichoor laddu from Asaan Sweets"
+                    fill
+                    priority
+                    sizes="(min-width: 1024px) 460px, (min-width: 768px) 55vw, 100vw"
+                    className="object-cover"
+                  />
+                </div>
               </div>
             </div>
           </Reveal>
