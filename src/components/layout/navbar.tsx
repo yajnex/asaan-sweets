@@ -36,7 +36,7 @@ export function Navbar() {
     <header className="fixed inset-x-0 top-0 z-50 px-4 pt-2.5 md:px-6 md:pt-3">
       <div
         className={cn(
-          "mx-auto grid max-w-7xl grid-cols-[44px_1fr_44px] items-center rounded-full border border-brown/10 bg-[#fbf7f0]/94 px-3 py-1.5 shadow-[0_14px_36px_rgba(44,27,18,0.12)] backdrop-blur-xl transition-all md:grid-cols-[52px_1fr_52px] md:px-5 lg:grid-cols-[1fr_auto_1fr]",
+          "mx-auto grid max-w-7xl grid-cols-[44px_1fr_44px] items-center rounded-full border border-brown/10 bg-[#fbf7f0]/94 px-3 py-2 shadow-[0_14px_36px_rgba(44,27,18,0.12)] backdrop-blur-xl transition-all md:grid-cols-[52px_1fr_52px] md:px-5 lg:grid-cols-[1fr_auto_1fr]",
           scrolled ? "translate-y-0 shadow-[0_18px_42px_rgba(44,27,18,0.14)]" : "",
         )}
       >
@@ -106,8 +106,9 @@ export function Navbar() {
         <Link
           href="/"
           aria-label="Asaan Sweets home"
-          className="justify-self-center transition-transform duration-300 hover:scale-[1.02]"
+          className="relative isolate justify-self-center transition-transform duration-300 hover:scale-[1.03]"
         >
+          <span className="pointer-events-none absolute inset-1/2 -z-10 h-28 w-28 -translate-x-1/2 -translate-y-1/2 rounded-full bg-[radial-gradient(circle,rgba(212,175,55,0.34)_0%,rgba(212,175,55,0.14)_42%,transparent_72%)] blur-2xl md:h-36 md:w-36" />
           <BrandMark size="nav" />
         </Link>
 
