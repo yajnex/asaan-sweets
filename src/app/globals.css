@@ -39,6 +39,7 @@
 
 html {
   scroll-behavior: smooth;
+  background-color: #f8f4ec;
 }
 
 body {
@@ -46,8 +47,9 @@ body {
   overflow-x: hidden;
   background-color: #f8f4ec;
   background-image:
-    radial-gradient(circle at top left, rgba(212, 175, 55, 0.05), transparent 24%),
-    linear-gradient(180deg, #fbf7f0 0%, #f8f4ec 56%, #f5eee2 100%);
+    radial-gradient(1200px 640px at 14% -8%, rgba(212, 175, 55, 0.08), transparent 58%),
+    linear-gradient(180deg, #fbf7f0 0px, #f8f4ec 420px, #f6efe4 100%);
+  background-repeat: no-repeat;
   color: var(--foreground);
   font-family: var(--font-body), sans-serif;
   text-rendering: optimizeLegibility;
