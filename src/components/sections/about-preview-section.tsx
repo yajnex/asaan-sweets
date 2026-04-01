@@ -12,24 +12,44 @@ export function AboutPreviewSection() {
     <section className="section-space">
       <div className="container-shell grid gap-8 lg:grid-cols-[1.05fr,0.95fr] lg:items-center">
         <Reveal>
-          <div className="relative overflow-hidden rounded-[40px] border border-brown/8 bg-sand/55 shadow-[0_28px_72px_rgba(44,27,18,0.12)]">
-            <Image
-              src="/images/craft-atelier.svg"
-              alt="Asaan Sweets craft and preparation"
-              width={960}
-              height={1080}
-              sizes="(min-width: 1024px) 50vw, 100vw"
-              className="h-full w-full object-cover"
-            />
-            <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(44,27,18,0.02),transparent_35%,rgba(44,27,18,0.34))]" />
-            <div className="absolute inset-x-0 bottom-0 p-5 md:p-6">
-              <div className="rounded-[24px] border border-white/12 bg-brown/34 px-5 py-4 backdrop-blur-sm md:max-w-[68%]">
-                <p className="text-[10px] font-semibold uppercase tracking-[0.3em] text-cream/70">
-                  Since 1987
+          <div className="space-y-4">
+            <div className="relative overflow-hidden rounded-[40px] border border-brown/8 bg-sand/55 shadow-[0_28px_72px_rgba(44,27,18,0.12)]">
+              <Image
+                src="/images/craft-atelier.svg"
+                alt="Asaan Sweets craft and preparation"
+                width={960}
+                height={1080}
+                sizes="(min-width: 1024px) 50vw, 100vw"
+                className="h-full w-full object-cover"
+              />
+              <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(44,27,18,0.02),transparent_35%,rgba(44,27,18,0.16))]" />
+            </div>
+            <div className="luxury-panel flex flex-wrap items-center gap-3 rounded-[24px] px-5 py-4">
+              <span className="rounded-full bg-[linear-gradient(135deg,rgba(250,235,188,0.82),rgba(212,175,55,0.3))] px-3 py-1.5 text-[10px] font-semibold uppercase tracking-[0.26em] text-[#7b5c39]">
+                Since 1987
+              </span>
+              <p className="font-serif text-[24px] leading-tight text-brown md:text-[28px]">
+                Slow-cooked batches, hand-finished fresh each day.
+              </p>
+            </div>
+            <div className="grid gap-3 sm:grid-cols-3">
+              <div className="rounded-[22px] border border-brown/8 bg-white/65 px-4 py-3">
+                <p className="text-[10px] font-semibold uppercase tracking-[0.24em] text-clay">
+                  Fresh
                 </p>
-                <p className="mt-2 font-serif text-[28px] font-semibold leading-[1] text-cream md:text-[34px]">
-                  The kitchen still runs on patience, not shortcuts.
+                <p className="mt-1 text-sm leading-6 text-brown">Prepared daily in small batches.</p>
+              </div>
+              <div className="rounded-[22px] border border-brown/8 bg-white/65 px-4 py-3">
+                <p className="text-[10px] font-semibold uppercase tracking-[0.24em] text-clay">
+                  Traditional
                 </p>
+                <p className="mt-1 text-sm leading-6 text-brown">Recipes kept familiar and consistent.</p>
+              </div>
+              <div className="rounded-[22px] border border-brown/8 bg-white/65 px-4 py-3">
+                <p className="text-[10px] font-semibold uppercase tracking-[0.24em] text-clay">
+                  Trusted
+                </p>
+                <p className="mt-1 text-sm leading-6 text-brown">Made for repeat orders and gifting.</p>
               </div>
             </div>
           </div>
