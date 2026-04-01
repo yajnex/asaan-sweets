@@ -3,7 +3,7 @@ import { cn } from "@/lib/utils";
 type SectionHeadingProps = {
   eyebrow: string;
   title: string;
-  description: string;
+  description?: string;
   align?: "left" | "center";
   light?: boolean;
 };
@@ -38,14 +38,16 @@ export function SectionHeading({
       >
         {title}
       </h2>
-      <p
-        className={cn(
-          "text-balance text-[15px] leading-6 md:text-[17px] md:leading-7",
-          light ? "text-cream/78" : "text-clay",
-        )}
-      >
-        {description}
-      </p>
+      {description ? (
+        <p
+          className={cn(
+            "text-balance text-[15px] leading-6 md:text-[17px] md:leading-7",
+            light ? "text-cream/78" : "text-clay",
+          )}
+        >
+          {description}
+        </p>
+      ) : null}
     </div>
   );
 }

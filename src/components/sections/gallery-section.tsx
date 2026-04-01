@@ -98,7 +98,6 @@ export function GallerySection() {
           <SectionHeading
             eyebrow="Gallery"
             title="A moving edit of craft, colour, and celebration-ready trays"
-            description="The gallery behaves like a premium brand reel: prep, finishing, plating, and gifting moments drifting past with just enough motion to feel alive."
             align="center"
           />
         </Reveal>

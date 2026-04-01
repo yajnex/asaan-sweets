@@ -46,19 +46,22 @@ export function HeroSection() {
           </Reveal>
 
           <Reveal delay={0.08} className="order-last lg:order-none">
-            <div className="relative mx-auto flex aspect-[1/1.08] w-full max-w-[560px] items-center justify-center lg:justify-end">
-              <div className="absolute inset-x-[10%] inset-y-[6%] rounded-t-[999px] rounded-b-[40px] border border-[#d4af37]/18 bg-[linear-gradient(180deg,rgba(255,251,243,0.96),rgba(248,236,208,0.82)_56%,rgba(247,239,225,0.44))] shadow-[0_34px_80px_rgba(44,27,18,0.12)]" />
-              <div className="absolute inset-x-[14%] inset-y-[10%] rounded-t-[999px] rounded-b-[34px] border border-white/70" />
-              <div className="absolute inset-x-[22%] top-[17%] bottom-[19%] rounded-full bg-[radial-gradient(circle,rgba(255,248,226,1)_0%,rgba(243,225,175,0.58)_46%,rgba(248,244,236,0)_74%)]" />
-              <div className="absolute inset-x-[27%] top-[24%] h-[32%] rounded-full bg-[radial-gradient(circle,rgba(212,175,55,0.32),transparent_72%)] blur-3xl" />
-              <div className="absolute inset-x-[22%] top-[16%] h-[52%] rounded-full border border-[#d4af37]/16" />
-              <div className="absolute inset-x-[26%] top-[20%] h-[44%] rounded-full border border-white/60" />
-              <div className="absolute bottom-[15%] left-1/2 h-px w-40 -translate-x-1/2 bg-[linear-gradient(90deg,transparent,rgba(212,175,55,0.86),transparent)] md:w-52" />
-              <div className="absolute bottom-[9.5%] left-1/2 -translate-x-1/2 text-center text-[11px] font-semibold uppercase tracking-[0.28em] text-[#7b5c39]">
+            <div className="relative mx-auto flex min-h-[360px] w-full max-w-[520px] items-center justify-center lg:min-h-[460px] lg:justify-end">
+              <div className="absolute inset-0 bg-[radial-gradient(circle,rgba(255,249,235,0.98)_0%,rgba(245,233,205,0.54)_40%,rgba(248,244,236,0)_72%)]" />
+              <div className="absolute inset-[11%] rounded-full border border-[#d4af37]/16" />
+              <div className="absolute inset-[19%] rounded-full border border-white/58" />
+              <div className="absolute inset-1/2 h-[68%] w-[68%] -translate-x-1/2 -translate-y-1/2 rounded-full bg-[radial-gradient(circle,rgba(212,175,55,0.18)_0%,rgba(212,175,55,0.06)_48%,transparent_76%)] blur-2xl" />
+              <div className="absolute left-2 top-[14%] hidden rounded-full border border-[#d4af37]/24 bg-white/76 px-4 py-2 text-[11px] font-semibold uppercase tracking-[0.24em] text-[#7b5c39] shadow-[0_14px_28px_rgba(44,27,18,0.08)] md:block">
+                Fresh Daily
+              </div>
+              <div className="absolute right-0 top-[26%] hidden rounded-full border border-[#d4af37]/24 bg-white/76 px-4 py-2 text-[11px] font-semibold uppercase tracking-[0.24em] text-[#7b5c39] shadow-[0_14px_28px_rgba(44,27,18,0.08)] md:block">
+                Heritage Recipes
+              </div>
+              <div className="absolute bottom-[12%] left-1/2 hidden -translate-x-1/2 rounded-full border border-[#d4af37]/24 bg-white/76 px-5 py-2 text-[11px] font-semibold uppercase tracking-[0.24em] text-[#7b5c39] shadow-[0_14px_28px_rgba(44,27,18,0.08)] md:block">
                 Trusted Since 1987
               </div>
               <div className="relative z-10">
-                <span className="pointer-events-none absolute inset-1/2 -z-10 h-72 w-72 -translate-x-1/2 -translate-y-1/2 rounded-full bg-[radial-gradient(circle,rgba(212,175,55,0.38)_0%,rgba(212,175,55,0.14)_46%,transparent_74%)] blur-3xl md:h-[26rem] md:w-[26rem] lg:h-[30rem] lg:w-[30rem]" />
+                <span className="pointer-events-none absolute inset-1/2 -z-10 h-72 w-72 -translate-x-1/2 -translate-y-1/2 rounded-full bg-[radial-gradient(circle,rgba(212,175,55,0.34)_0%,rgba(212,175,55,0.12)_48%,transparent_74%)] blur-3xl md:h-[28rem] md:w-[28rem] lg:h-[32rem] lg:w-[32rem]" />
                 <BrandMark size="hero" />
               </div>
             </div>

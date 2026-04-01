@@ -11,7 +11,7 @@ type BrandMarkProps = {
 
 const sizeClasses = {
   nav: "h-20 w-20 md:h-24 md:w-24",
-  hero: "h-56 w-56 md:h-72 md:w-72 lg:h-[22rem] lg:w-[22rem]",
+  hero: "h-60 w-60 md:h-80 md:w-80 lg:h-[24rem] lg:w-[24rem]",
   footer: "h-24 w-24 md:h-28 md:w-28",
 } as const;
 
@@ -42,7 +42,7 @@ export function BrandMark({
           priority={size === "hero"}
           sizes={
             size === "hero"
-              ? "(min-width: 1024px) 352px, (min-width: 768px) 288px, 224px"
+              ? "(min-width: 1024px) 384px, (min-width: 768px) 320px, 240px"
               : size === "footer"
                 ? "(min-width: 768px) 112px, 96px"
                 : "(min-width: 768px) 96px, 80px"
